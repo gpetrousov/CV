@@ -1,0 +1,6 @@
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get install -y texlive-full
+script:
+- xelatex resume_cv.tex
