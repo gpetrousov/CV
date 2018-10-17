@@ -1,0 +1,66 @@
+\begin{thebibliography}{1}
+
+\bibitem{DBLP:conf/patmos/PetrousovD14}
+Giannis Petrousov and Minas Dasygenis.
+\newblock A unique network {EDA} tool to create optimized ad hoc binary to
+  residue number system converters.
+\newblock In {\em 24th International Workshop on Power and Timing Modeling,
+  Optimization and Simulation, (PATMOS), Palma de Mallorca, Spain, September 29
+  - Oct. 1}, 2014.
+
+\bibitem{DBLP:conf/pci/PetrousovD14}
+Giannis Petrousov and Minas Dasygenis.
+\newblock Designing optimized forward residue number systems {IP} blocks
+  converters from a network interface.
+\newblock In {\em 18th Panhellenic Conference on Informatics, {PCI} '14,
+  Athens, Greece, October 2-4}, 2014.
+
+\bibitem{DBLP:DasygenisP15a}
+Minas Dasygenis and Ioannis Petrousov.
+\newblock A networking {EDA} tool for multi-vector multiplication {IP}
+  circuits.
+\newblock In {\em 10th International Conference on Design {\&} Technology of
+  Integrated Systems in Nanoscale Era, {DTIS} 2015, Napoli, Italy, April
+  21-23,}, 2015.
+
+\bibitem{Dasygenis2015AGM}
+Minas Dasygenis and Giannis Petrousov.
+\newblock A generic moduli selection algorithm for the residue number system.
+\newblock In {\em 10th International Conference on Design {\&} Technology of
+  Integrated Systems in Nanoscale Era, {DTIS} 2015, Napoli, Italy, April
+  21-23,}, 2015.
+
+\bibitem{giannissssss}
+Ioannis~Petrousov Minas~Dasygenis.
+\newblock Online generation of constant mulitplication accelerators.
+\newblock In {\em Panhellenic Conference on Electronics and Telecommunications,
+  PACET, May 8-9}, 2015.
+
+\bibitem{giannisss}
+Ioannis Petrousov and Minas Dasygenis.
+\newblock Generating custom bitwidth 4:2 compressors in hardware description
+  language from an online tool.
+\newblock In {\em 4th International conference on Modern Circuits and System
+  Technologies, May 12-14}, 2015.
+
+\bibitem{DBLP:conf/pci/PetrousovD15}
+Ioannis Petrousov and Minas Dasygenis.
+\newblock A {CAD} tool for custom magnitude comparators.
+\newblock In {\em Proceedings of the 19th Panhellenic Conference on
+  Informatics, {PCI} '15, Athens, Greece, October 1-3}, 2015.
+
+\bibitem{7937612}
+I.~Petrousov and M.~Dasygenis.
+\newblock Realization of a hardware generator for the sum of absolute
+  difference component.
+\newblock In {\em 6th International Conference on Modern Circuits and Systems
+  Technologies (MOCAST)}, pages 1--4, May 2017.
+
+\bibitem{Petrousov:2017:AGH:3139367.3139421}
+Ioannis Petrousov and Minas Dasygenis.
+\newblock Automating the generation of hardware accelerators from custom
+  arithmetic functions.
+\newblock In {\em Proceedings of the 21st Pan-Hellenic Conference on
+  Informatics}, PCI 2017, pages 14:1--14:5, September 2017.
+
+\end{thebibliography}

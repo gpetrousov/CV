@@ -1,0 +1,15 @@
+% resume_cv.top
+\unprotect
+\nonstopmode
+\def\MPOSTformatswitch{-progname=metafun -mem=}
+\setupsystem[\c!n=1,\c!m=1]
+\setupsystem[\c!method=2]
+\setupsystem[\c!type=linux]
+\setupsystem[\c!random=877]
+\setupsystem[inputfile=resume_cv.tex]
+\startsetups *runtime:options
+\setupoutput[pdftex]
+\stopsetups
+\startsetups *runtime:modules
+\stopsetups
+\protect \endinput
