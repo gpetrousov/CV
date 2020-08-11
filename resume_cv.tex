@@ -26,6 +26,19 @@
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
+% Configuration to stack multiple positions in the same company (promotions, client work, etc.)
+% TODO: create a new command and move section into awesome-cv.cls class file.
+% TOTODO: figure out if \cvsubentry can do the job better
+\usepackage{mdframed}
+\newmdenv[
+  topline=false,
+  bottomline=false,
+  leftline=true,
+  rightline=false,
+  skipabove=\topsep,
+  skipbelow=\topsep
+]{cventrystack}
+
 \geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
@@ -60,7 +73,7 @@
 %\twitter{@twit}
 
 \position{Computer scientist}%{\enskip\cdotp\enskip}Security Expert} % Your expertise/fields
-\quote{``Usque ad finem."} % A quote or statement
+\quote{``Kaizen"} % A quote or statement
 
 
 %\makecvfooter{\today}{Ioannis Petrousov~~~·~~~Résumé}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
