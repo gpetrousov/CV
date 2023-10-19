@@ -14,29 +14,27 @@
 {Freelance DevOps Engineer} % Job title
 {DPG Media} % Organization
 {Amsterdam, Netherlands - Hybrid} % Location
-{Jun 2023 - Today} % Date(s)
+{Jun 2023 - Oct 2023} % Date(s)
 { % Description(s) of tasks/responsibilities
-I was brought in to containerize and migrate all of the frontend application from EC2 to ECS.
-Here's a short summary of the deliverables so far:
+I was brought in to containerize and migrate the subscription applications of DPG from EC2 to ECS.
 \newline \hfill
 	\begin{cvitems}
-		\item {Architected the Landing Zone for the ECS setup}
-		\item {Built a Terraform module to easily replicate \emph{non-prod} and \emph{prod} environments}
-		\item {Developed a custom deployment pipe for BitBucket pipelines to support deployments to the environments}
+		\item {Architected the Landing Zone - with best practises - for the ECS setup}
+		\item {Developed a Terraform module to easily replicate \emph{non-prod} and \emph{prod} environments}
+		\item {Developed a custom deployment pipe to enable deployments on the new environments - Python}
 		\item {Setup monitoring and log streaming into OpenSeach}
-		\item {Implemented a lambda for \emph{Out of Office Hours} ECS shutdowns and starts - cost optimization}
-		\item {Developed a setup for segragated test environments per application - each dev own test environment}
-		\item {Documented and demoed the new setup}
+		\item {Automated AWS infrastructure cost control - Lambdas}
+		\item {Developed a scalable setup for segragated test environments - each dev own test enviroment}
+		\item {Delivered documentation for the new setup}
 		\item {\bfseries{Technologies:} AWS, Terraform, Docker, Python, Bash, BitBucket pipelines}
 	\end{cvitems}
 }
 
 \cventry{Freelance Cloud Engineer}
-		{ZEN Software}
-{Alkmaar, Netherlands}
+{ZEN Software}
+{Alkmaar, Netherlands - Hybrid}
 {Mar 2022 - Dec 2022}
-		{}
-
+{I was brought in to help the team migrate the CI/CD pipelines of a monolithic application to the cloud.}
 \hfill\begin{minipage}{\dimexpr\textwidth-1cm}
 \xdef\tpd{\the\prevdepth}
 \begin{cventrystack}
@@ -47,15 +45,15 @@ Here's a short summary of the deliverables so far:
 	{}
 	{
 		\begin{cvitems}
-			\item {Designed and implemented a new CI/CD pipelines stack for a Java based service: Hybris}
-			\item {Scripted and migrated manual CI/CD pipelines for Hybris from Bamboo into BitBucket cloud}
-			\item {Collaborated to bring self-hosted BitBucket runners for critical CI/CD pipelines}
+			\item {Designed and implemented a new CI/CD pipeline stack for a Java based backend}
+			\item {Scripted and migrated the manual CI/CD pipelines into BitBucket cloud}
+			\item {Collaborated to bring self-hosted BitBucket runners}
 			\item {Experimented hacking BitBucket self-hosted runners to use buildkit and full caching mechanism}
-			\item {Designed and implemented changes in Terraform on AWS and Checkly}
-			\item {Collaborated on making local development possible using docker-compose}
-			\item {Developed a migration plan from Ansible to Terraform for ECS microservice deployments}
-			\item {Implemented a Python lambda to dynamically activate AWS WAF challenge rule to prevent DDoS attacks}
-			\item {Implemented Greta: a shell script which kills overlapping pipelines in BitBucket (thus making environmentaly friendly builds)}
+			\item {Implemented changes in Terraform on AWS and Checkly}
+			\item {Collaborated on building docker-compose for local development}
+			\item {Developed a Terraform module to migrate from Ansible for ECS deployments}
+			\item {Implemented a lambda to dynamically toggle AWS WAF to prevent DDoS attacks - Python}
+			\item {Implemented an environmentally friendly script to prevent overlapping pipeline runs - fun project}
 			\item {\bfseries{Technologies:} AWS, Terraform, Docker, Makefile, BASH, Python, maven, BitBucket pipelines, HTTPD}
 		\end{cvitems}
 	}
