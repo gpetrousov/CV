@@ -10,6 +10,35 @@
 
 \begin{cventries}
 
+\cventry{Senior Developer}
+{101 Ways}
+{Amsterdam, Netherlands - Hybrid}
+{Nov 2023 - Jan 2024}
+{I was brought in to help the teams build the 2nd version of their service and migrate to it.}
+\hfill\begin{minipage}{\dimexpr\textwidth-1cm}
+\xdef\tpd{\the\prevdepth}
+\begin{cventrystack}
+	\cventry
+	{Senior Developer} % Job title
+	{Recharge} % Organization
+	{}
+	{}
+	{
+		\begin{cvitems}
+			\item {I developed the AWS infrastructure in Typescript with CDKTF}
+			\item {Automated storybook for PR environments}
+			\item {Implemented the first Database storage for the new version}
+			\item {Automated external docker images storage}
+			\item {Implemented the first Cloudfront distribution for the new version}
+			\item {Designed and built the AWS Kubernets setup}
+			\item {Built CI/CD pipelines with Github Actions}
+			\item {Provided guidance on architecture decissions}
+			\item {\bfseries{Technologies:} AWS, Typescript, CDKTF, Kubernetes, Istio, Github Actions, BASH}
+		\end{cvitems}
+	}
+\end{cventrystack}
+\end{minipage}
+
 \cventry
 {Freelance DevOps Engineer} % Job title
 {DPG Media} % Organization
@@ -90,7 +119,7 @@ I was brought in to containerize and migrate the subscription applications of DP
 {
 	\begin{cvitems}
 		\item {Worked with several clients, focusing on AWS, on-site and remotely}
-		\item {Got voted as hero for contributions to technical writing}
+		\item {Received the hero award of the year for technical writing - checkout my blog}
 	\end{cvitems}
 }
 
@@ -135,9 +164,10 @@ I was brought in to containerize and migrate the subscription applications of DP
 			\item {Worked with multiple dev and business teams}
 			\item {Implemented CI/CD pipelines using Bitbucket pipelines}
 			\item {Migrated monitoring and alerting from New relic into SignalFX, OpsGenie, Slack}
-			\item {Migrated self-hosted Apache servers into a microservice}
-			\item {Developed IaC in Ansible and Terraform}
-			\item {Implemented various glue logic in Lambdas and Python}
+			\item {Migrated the self-hosted HTTP Apache edge servers into scalable microservices}
+			\item {I was the goto person for the edge routing services}
+			\item {Developed IaC for AWS in Ansible and Terraform}
+			\item {Implemented various glue logic with Lambdas and Python}
 			\item {\bfseries{Technologies:} AWS, Python, ECS, Docker, Terraform, SignalFX, Ansible, Apache, Logzio}
 		\end{cvitems}
 	}
@@ -153,11 +183,11 @@ I was brought in to containerize and migrate the subscription applications of DP
 {May 2018 - Feb. 2019} % Date(s)
 { % Description(s) of tasks/responsibilities
 	\begin{cvitems}
-	\item {Developed custom plugins for Kong (Lua)}
-		\item {Evangelized Jira, Confluence, Slack, git}
-		\item {Liaise with management and stakeholders (ISG, legal, directors)}
-		\item {Worked in a highly agile team developing a centralised API system}
-		\item {\bfseries{Technologies:} VMWare, Lua, Docker, OVH cloud, WCS}
+	\item {Reverse engineered proprietary Kong plugins}
+	\item {Developed custom Kong plugins (complete with unit tests no questions asked) - check my github profile!}
+	\item {Liaise with management and stakeholders (ISG, legal, directors) to migrate to AWS ASAP!}
+	\item {Worked with a team to build centralised API hub fronting an IBM service}
+	\item {\bfseries{Technologies:} VMWare, Lua, Docker, OVH cloud, WCS}
 	\end{cvitems}
 }
 
@@ -170,12 +200,12 @@ I was brought in to containerize and migrate the subscription applications of DP
 {Oct. 2017 - Feb. 2018} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item {Deployed infrastructure on Azure}
-\item {Worked on setting up a Kubernetes cluster to facilitate the hosting of Scala based microservices}
-\item {CD/CI: Jenkins server and Dockerized, Groovy}
-\item {Automation: Ansible, bash}
-\item {Developed shell scripts for interaction with Azure, Kubernetes and GCP}
-\item {\bfseries{Technologies:} Azure, Kubernetes, Docker, Ansible, Nginx, Node, Kafka, Scala }
+\item {I built and deployed the infrastructure on Azure}
+\item {Built a Kubernetes cluster to send massive amounts of emails cheaply with Scala.}
+\item {Developed a bunch of CD/CI pipelines on Jenkins with Groovy}
+\item {Automated services and infrastructure provisioning with Ansible and BASH}
+\item {Developed several scripts for cleaning up stale resources on Kubernetes, Azure and GCP - cost saving}
+\item {\bfseries{Technologies:} Azure, Kubernetes, Docker, Ansible, Nginx, NodeJS, Kafka, Scala }
 \end{cvitems}
 }
 
@@ -202,12 +232,14 @@ I was brought in to containerize and migrate the subscription applications of DP
 {Aug. 2015 - Oct. 2016} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item {Ran, maintened and managed services on bare-metal for a small startup}
-\item {Designed and implemented a cluster for microservices based on Docker, Mesos, Marathon and Zookeeper.}
-\item {Upgraded to DC/OS.}
-\item {Developed scripts for autoscaling, recovery and reconfiguration.}
-\item {Performed configuration and monitoring of Couchbase clusters.}
-\item {Implemented continuous delivery pipelines with Jenkins, Python and bash.}
+\item {Built and migrated from hosted to a microservice setup on bare metal before it was even a thing}
+\item {Implemented a HA cluster based on Docker, Mesos, Marathon and Zookeeper.}
+\item {Migrated to DC/OS.}
+\item {Developed an automation framework for infrastructure autoscaling, recovery and reconfiguration.}
+\item {Developed a soft shutdown and recovery program tied to physical UPS boxes.}
+\item {Developed and scaled Couchbase cluster setups for storage.}
+\item {Automated backups on physical tapes - Carefree backup system for my manager.}
+\item {Built CI/CD pipelines with Groovy, Python and bash.}
 \item {\bfseries{Technologies:} Docker, DC/OS, shell, Java, Wildfly, Redis, Node, Jenkins, Couchbase, Hadoop}
 \end{cvitems}
 }
@@ -221,10 +253,10 @@ I was brought in to containerize and migrate the subscription applications of DP
 {Oct. 2014 - Dec. 2014} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item {I was setting up a virtualization service on bare-metal for a small hosting company}
-\item {Implemented a high availability cluster with Proxmox and Ovirt to facilitate application hosting.}
-\item {Created a backup and network storage using Freenas and zfs.}
-\item {Developed bash scripts for automation and logs.}
+\item {I built a scalable virtualization platform on bare-metal blades.}
+\item {Migrated later to Ovirt (bare metal cloud) and setup Proxmox to facilitate application hosting.}
+\item {Implemented a backup NAS solution using Freenas and ZFS.}
+\item {Developed automation scripts for provisioning and logging.}
 \item {\bfseries{Technologies:} Ovirt, Unraid, Nas4free, Zfsguru, Nappit, Omnios, Openindiana, Nexenta, Proxmox}
 \end{cvitems}
 }
