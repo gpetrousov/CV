@@ -4,3 +4,8 @@
 *.log
 *.swp
 *.aux
+*.blg
+*.out
+*.tmp
+*.tui
+*.mp
