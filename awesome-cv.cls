@@ -318,6 +318,7 @@
 % Defines writer's twitter (optional)
 % Usage: \twitter{<twitter handle>}
 \newcommand*{\twitter}[1]{\def\@twitter{#1}}
+\newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
 
 % Defines writer's quote (optional)
 % Usage: \quote{<quote>}
@@ -410,7 +411,7 @@
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false}%
+              \setbool{isstart}{false}%
             }%
             {\acvHeaderSocialSep}%
           \href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email}%
@@ -420,7 +421,7 @@
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false}%
+              \setbool{isstart}{false}%
             }%
             {\acvHeaderSocialSep}%
           \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
@@ -430,7 +431,7 @@
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false}%
+              \setbool{isstart}{false}%
             }%
             {\acvHeaderSocialSep}%
           \href{https://github.com/\@github}{\faGithub\acvHeaderIconSep\@github}%
@@ -440,7 +441,7 @@
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false}%
+              \setbool{isstart}{false}%
             }%
             {\acvHeaderSocialSep}%
           \href{https://medium.com/@\@medium}{\faMedium\acvHeaderIconSep\@medium}%
@@ -450,7 +451,7 @@
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false} %
+              \setbool{isstart}{false} %
             }%
             {\acvHeaderSocialSep}%
           \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\acvHeaderIconSep\@stackoverflowname}%
@@ -460,7 +461,7 @@
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false}%
+              \setbool{isstart}{false}%
             }%
             {\acvHeaderSocialSep}%
           \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
@@ -470,17 +471,27 @@
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false} %
+              \setbool{isstart}{false} %
             }%
             {\acvHeaderSocialSep}%
           \href{https://twitter.com/\@twitter}{\faTwitter\acvHeaderIconSep\@twitter}%
+        }%
+      \ifthenelse{\isundefined{\@extrainfo}}%
+        {}%
+        {%
+          \ifbool{isstart}%
+            {%
+              \setbool{isstart}{false}%
+            }%
+            {\acvHeaderSocialSep}%
+          \@extrainfo%
         }%
       \ifthenelse{\isundefined{\@skype}}%
         {}%
         {%
           \ifbool{isstart}%
             {%
-              \setbool{istart}{false} %
+              \setbool{isstart}{false} %
             }%
             {\acvHeaderSocialSep}%
           \faSkype\acvHeaderIconSep\@skype%
