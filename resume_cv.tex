@@ -27,8 +27,6 @@
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
 % Configuration to stack multiple positions in the same company (promotions, client work, etc.)
-% TODO: create a new command and move section into awesome-cv.cls class file.
-% TOTODO: figure out if \cvsubentry can do the job better
 \usepackage{mdframed}
 \newmdenv[
   topline=false,
@@ -39,21 +37,15 @@
   skipbelow=\topsep
 ]{cventrystack}
 
+\usepackage{graphicx}
+
 \geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
 
 % Color for highlights
-\colorlet{awesome}{awesome-orange} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
-%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
-
-% Colors for text - uncomment and modify
-%\definecolor{darktext}{HTML}{414141}
-%\definecolor{text}{HTML}{414141}
-%\definecolor{graytext}{HTML}{414141}
-%\definecolor{lighttext}{HTML}{414141}
-
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+\colorlet{awesome}{awesome-orange} 
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -61,70 +53,38 @@
 %----------------------------------------------------------------------------------------
 
 \name{Ioannis}{Petrousov}
-\address{North Holland, Netherlands}
-\mobile{+31 6 182 197 88}
+\address{Zuid Holland, Netherlands}
 
-\email{petrousov@gmail.com}
+\email{contact@petrousoft.com}
 \homepage{petrousoft.com}
 \github{gpetrousov}
 \medium{petrousoft}
 \linkedin{ioannispetrousov}
-%\skype{skypeid}
-%\stackoverflow{SOid}{SOname}
-%\twitter{@twit}
+\extrainfo{
+  \href{https://www.researchgate.net/profile/Ioannis-Petrousov-2}{\faGraduationCap\acvHeaderIconSep ResearchGate}
+  \acvHeaderSocialSep
+  \href{https://huggingface.co/ipetrousov}{\raisebox{-1.5pt}{\includegraphics[height=10pt]{hf-logo.png}}\acvHeaderIconSep HuggingFace}
+}
 
-\position{AI Researcher \& Systems Engineer}%{\enskip\cdotp\enskip}Security Expert} % Your expertise/fields
-\quote{``Kaizen"} % A quote or statement
+\position{Systems \& AI Engineer} % Shortened title as requested
+%\quote{``Kaizen"}
 
-
-%\makecvfooter{\today}{Ioannis Petrousov~~~·~~~Résumé}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
-\makecvfooter{\today}{Ioannis Petrousov~~~·~~~CV}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not
+\makecvfooter{\today}{Ioannis Petrousov~~~·~~~CV}{\thepage}
 
 %----------------------------------------------------------------------------------------
 \begin{document}
 \makecvheader % Print the header
-%\vspace{-0.5cm}
 
-\bigskip
+\vspace{-4mm} % Reduced space between header and first section
 \noindent
 %----------------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
 %----------------------------------------------------------------------------------------
 
 \input{cv-sections/skills.tex}
-\input{cv-sections/experience.tex}
 \input{cv-sections/education.tex}
+\input{cv-sections/experience.tex}
 \input{cv-sections/honors.tex}
-
-\cvsection{Publications}
-\begingroup
-\renewcommand{\section}[2]{}%
-\bibliographystyle{unsrt}{\color{black}
-\bibliography{refs}
-\nocite{*}
-
-\input{cv-sections/volunteering.tex}
-%\input{cv-sections/presentation.tex}
-%\input{cv-sections/writing.tex}
-%\input{cv-sections/committees.tex}
-
-%----------------------------PROJECTS-----------------------------------------
-% \cvsection{Projects}
-% My public projects are hosted on github.
-
-% \setlength\parindent{24pt}\color{black}{\textbf{\underline{redis4mesos}}\\
-% Standalone Redis container to deploy on Mesos cluster with Marathon and route with
-% HAProxy. This project was featured on Redis weekly \url{http://redisweekly.com/archive/129.html}}
-
-% \setlength\parindent{24pt}\color{black}{\textbf{\underline{$\alpha$-HDL Generator}}\\
-% I actively participate in the design, development, debugging and optimization of an online
-% HDL generator. \url{http://arch.icte.uowm.gr/hdl/}}
-
-% \setlength\parindent{24pt}\color{black}{\textbf{\underline{roboCIM}}\\
-% The platform allows you to control the LabVolt 5250 robotic arm on a chessboard and play chess or
-% solve puzzles. \url{https://github.com/gpetrousov/roboCIM}
-
-%----------------------------------------------------------------------------------------
+\input{cv-sections/hobbies.tex}
 
 \end{document}

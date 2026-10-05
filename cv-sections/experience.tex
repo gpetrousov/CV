@@ -1,12 +1,4 @@
-%----------------------------------------------------------------------------------------
-%	SECTION TITLE
-%----------------------------------------------------------------------------------------
-
 \cvsection{Experience}
-
-%----------------------------------------------------------------------------------------
-%	SECTION CONTENT
-%----------------------------------------------------------------------------------------
 
 \begin{cventries}
 
@@ -15,306 +7,95 @@
 {Utrecht, Netherlands - Hybrid}
 {Jun 2024 - Jan 2025}
 {
-I was brought in to accelerate the migration of middlware from on-prem to AWS.
-\newline \hfill
 	\begin{cvitems}
-		\item {Built EKS clusters - Terraform}
-		\item {Designed for scalability and cost optimization - karpenter}
-		\item {Developed Terraform infra modules with additional features}
-		\item {Oversaw 61 AWS accounts}
-		\item {Built network infrastructure for external providers,such as MongoDB}
-		\item {Liased with different teams and planned work}
-        \item {Automated repetitive work with Lambdas (DNS, certificates, logging) - Python}
-		\item {Wrote CI/CD pipelines for package releases - Gitlab }
-		\item {Developed Applications in ArgoCD for kubernetes infra related services}
-		\item {Designed an SDLC approach for the infrastructure monorepo}
-		\item {Delivered documentation for the new setups}
-		\item {\bfseries{Technologies:} AWS, EKS, Terraform, Kubernetes, Docker, Python, Bash, ArgoCD, Gitlab}
+		\item {Spearheaded the migration of middleware from on-prem to AWS EKS, designing architecture for massive scalability and cost optimization.}
+		\item {Automated complex repetitive tasks and infrastructure logic using Python Lambdas (DNS, certificates, logging).}
+		\item {Engineered self-service infrastructure modules in Terraform and highly concurrent CI/CD pipelines for package releases.}
+		\item {Orchestrated stateful deployments and distributed computing across 61 AWS accounts.}
 	\end{cvitems}
 }
 
-
 \cventry{Senior Freelance Developer}
-{101 Ways}
+{101 Ways (Client: Recharge)}
 {Amsterdam, Netherlands - Hybrid}
 {Nov 2023 - Jan 2024}
-{I was brought in to help the teams build the 2nd version of their service and migrate to it.}
-\hfill\begin{minipage}{\dimexpr\textwidth-1cm}
-\xdef\tpd{\the\prevdepth}
-\begin{cventrystack}
-	\cventry
-	{Senior Freelance Developer} % Job title
-	{Recharge} % Organization
-	{}
-	{}
-	{
-		\begin{cvitems}
-			\item {I developed the AWS infrastructure in Typescript with CDKTF}
-			\item {Automated storybook for PR environments}
-			\item {Implemented the first Database storage for the new version}
-			\item {Automated external docker images storage}
-			\item {Implemented the first Cloudfront distribution for the new version}
-			\item {Collaborated on the AWS EKS setup}
-			\item {Built CI/CD pipelines with Github Actions}
-			\item {Provided guidance on architecture decissions}
-			\item {\bfseries{Technologies:} AWS, Typescript, CDKTF, Kubernetes, Istio, Github Actions, BASH}
-		\end{cvitems}
-	}
-\end{cventrystack}
-\end{minipage}
+{
+	\begin{cvitems}
+		\item {Consulted on architecture and engineered the V2 platform rollout using AWS EKS and CDKTF (TypeScript).}
+		\item {Built dynamic automated CI/CD pipelines with GitHub Actions to spin up ephemeral environments and manage container storage.}
+	\end{cvitems}
+}
 
 \cventry
-{Freelance DevOps Engineer} % Job title
-{DPG Media} % Organization
-{Amsterdam, Netherlands - Hybrid} % Location
-{Jun 2023 - Oct 2023} % Date(s)
-{ % Description(s) of tasks/responsibilities
-I was brought in to containerize and migrate the subscription applications of DPG from EC2 to ECS.
-\newline \hfill
+{Freelance DevOps Engineer}
+{DPG Media}
+{Amsterdam, Netherlands - Hybrid}
+{Jun 2023 - Oct 2023}
+{
 	\begin{cvitems}
-		\item {Architected the Landing Zone - with best practises - for the ECS setup}
-		\item {Developed a Terraform module to easily replicate \emph{non-prod} and \emph{prod} environments}
-		\item {Developed a custom deployment pipe to enable deployments on the new environments - Python}
-		\item {Setup monitoring and log streaming into OpenSeach}
-		\item {Automated AWS infrastructure cost control - Lambdas}
-		\item {Developed a scalable setup for segragated test environments - each dev own test enviroment}
-		\item {Delivered documentation for the new setup}
-		\item {\bfseries{Technologies:} AWS, Terraform, Docker, Python, Bash, BitBucket pipelines}
+		\item {Architected the production AWS ECS landing zone and developed modular Terraform code to provision segregated, scalable environments.}
+		\item {Engineered custom Python deployment pipelines and automated resource cost-controls via AWS Lambdas.}
 	\end{cvitems}
 }
 
 \cventry{Freelance Cloud Engineer}
-{ZEN Software}
+{ZEN Software (Client: Maxeda)}
 {Alkmaar, Netherlands - Hybrid}
 {Mar 2022 - Dec 2022}
-{I was brought in to migrate the build, test and deployment of a monolithic Java application in the cloud.}
-\hfill\begin{minipage}{\dimexpr\textwidth-1cm}
-\xdef\tpd{\the\prevdepth}
-\begin{cventrystack}
-	\cventry
-	{Cloud Solution Engineer} % Job title
-	{Maxeda} % Organization
-	{}
-	{}
-	{
-		\begin{cvitems}
-			\item {Designed and implemented a new CI/CD pipeline stack for a Java based backend app}
-			\item {Automated manual CI/CD pipelines into BitBucket cloud}
-			\item {Brought self-hosted BitBucket runners for critical pipelines}
-			\item {Hacked BitBucket self-hosted runners to use buildkit and full caching mechanism}
-			\item {Built infrastructure with Terraform on AWS}
-			\item {Implemented docker-compose setup for local application development}
-			\item {Developed a Terraform module to migrate from Ansible}
-			\item {Developed a lambda based mechanism to dynamically toggle AWS WAF challenge}
-			\item {Implemented an environmentally friendly script to prevent overlapping pipeline runs - fun project}
-			\item {\bfseries{Technologies:} AWS, Terraform, Docker, Makefile, BASH, Python, maven, BitBucket pipelines, HTTPD}
-		\end{cvitems}
-	}
-\end{cventrystack}
-\end{minipage}
-
-\cventry
-{DevOps Engineer} % Job title
-{Hubs - a Protolabs company} % Organization
-{Amsterdam, Netherlands} % Location
-{Jan 2020 - Mar 2022} % Date(s)
-{ % Description(s) of tasks/responsibilities
+{
 	\begin{cvitems}
-		\item {Migrated a self-hosted RabbitMQ cluster into AmazonMQ with minimal downtime}
-		\item {Proposed and developed the first Public ML pricing API as a hackathon project}
-		\item {Implemented monitoring and alerting from the ground up with NewRelic}
-		\item {Obsessed with NewRelic cost optimization: saving \$1300/month on average}
-		\item {Migrated CI pipelines for Frontend and ML projects from Jenkins to Github Actions}
-		\item {Performed Github Actions optimizations with parallelisation and smart caching}
-		\item {Worked on the development of self-hosted kubernets on AWS - typhoon.psdn.io}
-		\item {Cost optimizations for AWS by migrating, optimizing and automating resources}
-		\item {Automated on/off-boarding into Github org.}
-		\item {Interviewed people for Python engineer roles.}
-		\item {\bfseries{Technologies:} AWS, Terraform, Docker, k8s, Github Actions, Python, Bash, Concourse}
+		\item {Architected an automated CI/CD lifecycle via BitBucket Cloud, engineering custom self-hosted runners integrated with BuildKit for caching.}
+		\item {Developed serverless Python Lambda logic to dynamically toggle security challenges and automated infrastructure with Terraform.}
 	\end{cvitems}
 }
 
+\cventry
+{DevOps Engineer}
+{Hubs - a Protolabs company}
+{Amsterdam, Netherlands}
+{Jan 2020 - Mar 2022}
+{
+	\begin{cvitems}
+		\item {Developed the first Public ML pricing API using AWS API Gateway and Lambdas.}
+		\item {Migrated CI pipelines for ML projects from Jenkins to GitHub Actions, performing optimizations with parallelization and smart caching.}
+		\item {Provisioned self-hosted Kubernetes clusters on AWS and executed zero-downtime migrations.}
+	\end{cvitems}
+}
 
 \cventry{Senior Cloud Solution Engineer}
-{Mirabeau - a Cognizant Digital Business}
+{Mirabeau - a Cognizant Digital Business (Clients: Karwei, Arcadia, Maxeda DIY)}
 {Amsterdam, Netherlands}
 {Mar 2019 - Dec 2020}
 {
 	\begin{cvitems}
-		\item {Worked with several clients, focusing on AWS, on-site and remotely}
-		\item {Received the hero award of the year for technical writing - checkout my blog}
+		\item {Consulted multiple dev teams on infrastructure architecture, CI/CD, and executed PoC migrations of legacy systems to AWS.}
+		\item {Migrated self-hosted HTTP Apache edge servers into scalable microservices and acted as the go-to person for edge routing.}
+		\item {Wrote infrastructure-as-code in Terraform and Ansible, and developed custom Python Lambdas for system glue logic.}
 	\end{cvitems}
 }
 
-% Stack positions to show work for the same company.
-\hfill\begin{minipage}{\dimexpr\textwidth-1cm}
-\xdef\tpd{\the\prevdepth}
-\begin{cventrystack}
-	\cventry
-	{Senior Cloud Solution Engineer} % Job title
-	{Karwei} % Organization
-	{} % Location
-	{Jul 2020 - Dec 2020} % Date(s)
-	{
-		\begin{cvitems}
-			\item {Implementing requested functionality in Terraform on AWS}
-			\item {Answering technical questions, related to AWS and CI/CD}
-			\item {Participated in on-call rotation}
-			\item {\bfseries{Technologies:} AWS, Terraform}
-		\end{cvitems}
-	}
-
-	\cventry
-	{Cloud Consultant} % Job title
-	{Arcadia Group} % Organization
-	{Remote} % Location
-	{Jun 2020 - Jul 2020} % Date(s)
-	{ % Description(s) of tasks/responsibilities
-		\begin{cvitems}
-			\item {POC for a client}
-			\item {Migrated a legacy 3-tier POS system into AWS}
-			\item {\bfseries{Technologies:} AWS, CloudEndure}
-		\end{cvitems}
-	}
-
-	\cventry
-	{Cloud Engineer} % Job title
-	{Maxeda DIY Group} % Organization
-	{} % Location
-	{Mar 2019 - June 2020} % Date(s)
-	{ % Description(s) of tasks/responsibilities
-		\begin{cvitems}
-			\item {Worked with multiple dev and business teams}
-			\item {Implemented CI/CD pipelines using Bitbucket pipelines}
-			\item {Migrated monitoring and alerting from New relic into SignalFX, OpsGenie, Slack}
-			\item {Migrated the self-hosted HTTP Apache edge servers into scalable microservices}
-			\item {I was the goto person for the edge routing services}
-			\item {Developed IaC for AWS in Ansible and Terraform}
-			\item {Implemented various glue logic with Lambdas and Python}
-			\item {\bfseries{Technologies:} AWS, Python, ECS, Docker, Terraform, SignalFX, Ansible, Apache, Logzio}
-		\end{cvitems}
-	}
-
-\end{cventrystack}
-\end{minipage}
-
-
 \cventry
-{DevOps Specialist} % Job title
-{PVH Corp.} % Organization
-{Amsterdam, Netherlands} % Location
-{May 2018 - Feb. 2019} % Date(s)
-{ % Description(s) of tasks/responsibilities
+{DevOps Specialist}
+{PVH Corp.}
+{Amsterdam, Netherlands}
+{May 2018 - Feb. 2019}
+{
 	\begin{cvitems}
-	\item {Reverse engineered proprietary Kong plugins}
-	\item {Developed custom Kong plugins (complete with unit tests no questions asked) - check my github profile!}
-	\item {Liaise with management and stakeholders (ISG, legal, directors) to migrate to AWS ASAP!}
-	\item {Worked with a team to build centralised API hub fronting an IBM service}
-	\item {\bfseries{Technologies:} VMWare, Lua, Docker, OVH cloud, WCS}
+	\item {Built the centralized API hub for all mobile apps using Kong API Gateway.}
+	\item {Reverse-engineered proprietary Kong plugins and developed custom Lua APIs for middleware systems.}
 	\end{cvitems}
 }
 
-%------------------------------------------------
-
 \cventry
-{DevOps developer} % Job title
-{Vandebron Energie B.V.} % Organization
-{Amsterdam, Netherlands} % Location
-{Oct. 2017 - Feb. 2018} % Date(s)
-{ % Description(s) of tasks/responsibilities
+{System administrator}
+{Betiator gaming technologies}
+{Athens, Greece}
+{Aug. 2015 - Oct. 2016}
+{
 \begin{cvitems}
-\item {I built and deployed the infrastructure on Azure}
-\item {Built a Kubernetes cluster to send massive amounts of emails cheaply with Scala.}
-\item {Developed a bunch of CD/CI pipelines on Jenkins with Groovy}
-\item {Automated services and infrastructure provisioning with Ansible and BASH}
-\item {Developed several scripts for cleaning up stale resources on Kubernetes, Azure and GCP - cost saving}
-\item {\bfseries{Technologies:} Azure, Kubernetes, Docker, Ansible, Nginx, NodeJS, Kafka, Scala }
+\item {Implemented a HA platform based on Docker, Mesos, Marathon and Zookeeper, later migrated to DC/OS.}
+\item {Developed an automation framework for infrastructure autoscaling, recovery, and reconfiguration.}
 \end{cvitems}
 }
-
-%------------------------------------------------
-
-\cventry
-{Conscript} % Job title
-{Greek Army} % Organization
-{Greece} % Location
-{Mar. 2017 - Jun. 2017} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {It's a mandatory conscription, in case you were wondering about the career pause}
-\item {\bfseries{Stack:} Wired telecommunications, G3A3 rifle}
-\end{cvitems}
-}
-
-%------------------------------------------------
-
-\cventry
-{System administrator} % Job title
-{Betiator gaming technologies} % Organization
-{Athens, Greece} % Location
-{Aug. 2015 - Oct. 2016} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Built and migrated from hosted to a microservice setup on bare metal before it was even a thing}
-\item {Implemented a HA cluster based on Docker, Mesos, Marathon and Zookeeper.}
-\item {Migrated to DC/OS.}
-\item {Developed an automation framework for infrastructure autoscaling, recovery and reconfiguration.}
-\item {Developed a soft shutdown and recovery program tied to physical UPS boxes.}
-\item {Developed and scaled Couchbase cluster setups for storage.}
-\item {Automated backups on physical tapes - Carefree backup system for my manager.}
-\item {Built CI/CD pipelines with Groovy, Python and bash.}
-\item {\bfseries{Technologies:} Docker, DC/OS, shell, Java, Wildfly, Redis, Node, Jenkins, Couchbase, Hadoop}
-\end{cvitems}
-}
-
-%------------------------------------------------    
-
-\cventry
-{Linux administrator (intern)} % Job title
-{IP Digital} % Organization
-{Thessaloniki, Greece} % Location
-{Oct. 2014 - Dec. 2014} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {I built a scalable virtualization platform on bare-metal blades.}
-\item {Migrated later to Ovirt (bare metal cloud) and setup Proxmox to facilitate application hosting.}
-\item {Implemented a backup NAS solution using Freenas and ZFS.}
-\item {Developed automation scripts for provisioning and logging.}
-\item {\bfseries{Technologies:} Ovirt, Unraid, Nas4free, Zfsguru, Nappit, Omnios, Openindiana, Nexenta, Proxmox}
-\end{cvitems}
-}
-
-%------------------------------------------------
-
-\cventry
-{Laboratory Assistant (Rewarding Scholarship)} % Job title
-{Laboratory of Digital Systems and Computer Architecture} % Organization
-{Kozani, Greece} % Location
-{Mar. 2014 - Jun. 2014} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {Supervised students on the courses}
-\begin{itemize}
-\item {Operating systems}
-\item {Systems of parallel and distributed execution}
-\item {Digital design}
-\end{itemize}
-\end{cvitems}
-}
-
-%------------------------------------------------
-
-\cventry
-{University Librarian (Rewarding Scholarship)} % Job title
-{University Of Western Macedonia} % Organization
-{Kozani, Greece} % Location
-{Mar. 2013 - Jun. 2013} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item {http://lib.uowm.gr/}
-\end{cvitems}
-}
-
-%------------------------------------------------
 
 \end{cventries}
